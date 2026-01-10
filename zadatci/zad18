@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija LEGO setova</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcf00;
+            height: 50px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcf00;
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: #ffcf00; 
+            /* Možeš dodati i border-bottom ako želiš da se ističe */
+        }
+
+        nav a[target="_blank"] {
+            color: #ffcf00;
+        }
+        
+        nav a[target="_blank"]::after {
+            content: " \2197";
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px; /* Malo više paddinga */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px; /* Blago zaobljeni rubovi kontejnera */
+        }
+
+        h1 {
+            text-align: left;
+            margin-bottom: 5px;
+            font-family: 'Segoe UI', sans-serif; /* Osiguravamo font */
+            font-weight: 700;
+        }
+
+        p.intro {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        /* --- GRID LAYOUT (Vježba 18) --- */
+        .gallery {
+            display: grid;
+            /* Definiramo 3 stupca jednake širine */
+            grid-template-columns: repeat(3, 1fr); 
+            /* Razmak između redova i stupaca */
+            gap: 20px; 
+        }
+
+        /* --- STIL KARTICE --- */
+        .card {
+            background-color: #fff;
+            border: 2px solid #ddd; /* Default sivi obrub */
+            border-radius: 10px; /* Zaobljeni rubovi kartice kao na slici */
+            padding: 15px; /* Unutarnji razmak da slika ne dira rub */
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Lagano podizanje na hover */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px; /* Razmak između slike i teksta */
+        }
+
+        .card span {
+            display: block;
+            color: #777;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* --- BOJE OBRUBA PREMA VRSTI (data-set na kartici) --- */
+        
+        /* City - Plava */
+        .card[data-set="city"] {
+            border-color: #0055BF; 
+        }
+
+        /* Technic - Narančasta (prema slici vježbe 18) */
+        .card[data-set="technic"] {
+            border-color: #F57C00; 
+        }
+
+        /* Friends - Roza/Ljubičasta */
+        .card[data-set="friends"] {
+            border-color: #E91E63; 
+        }
+
+        /* Responzivnost (opcionalno, ali dobro za imati) */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 stupca na tabletima */
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr; /* 1 stupac na mobitelima */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header></header>
+    
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="galerija.html" class="active
