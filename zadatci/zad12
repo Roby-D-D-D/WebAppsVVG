@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 12</title>
+    <style>
+        input, select, textarea { width: 100%; padding: 12px; margin: 6px 0 16px; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        input[type=submit], input[type=reset] { width: auto; background-color: #f1f1f1; color: black; padding: 12px 20px; border: none; cursor: pointer; }
+        input[type=submit]:hover, input[type=reset]:hover { background-color: #ddd; }
+    </style>
+</head>
+<body>
+    <h3>VJEŽBA</h3>
+    <form>
+        <label>First Name *</label>
+        <input type="text" name="firstname" placeholder="Your first name.." required>
+
+        <label>Last Name *</label>
+        <input type="text" name="lastname" placeholder="Your last name.." required>
+
+        <label>Your E-mail *</label>
+        <input type="email" name="email" placeholder="Your e-mail.." required>
+
+        <label>Country</label>
+        <select name="country">
+            <option value="croatia">Croatia</option>
+            <option value="usa">USA</option>
+            <option value="germany">Germany</option>
+        </select>
+
+        <label>Message</label>
+        <textarea name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
