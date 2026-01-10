@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija LEGO setova</title>
+    <style>
+        body {
+            /* Promjena fonta kako bi odgovarao slici (Segoe UI je standard za Windows) */
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcf00;
+            height: 50px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600; /* Malo deblja slova kao na slici */
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:visited {
+            color: #ddd;
+        }
+
+        nav a:hover {
+            color: #ffcf00;
+            text-decoration: underline;
+        }
+
+        nav a:active {
+            color: #d01012;
+        }
+
+        nav a:focus {
+            outline: 2px dashed #ffcf00;
+            background-color: #555;
+        }
+
+        nav a[target="_blank"] {
+            color: #ffcf00;
+        }
+
+        nav a[target="_blank"]::after {
+            content: " \2197";
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 30%; /* Da stane 3 u red s razmakom */
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 5px;
+            background-color: white;
+            box-sizing: border-box; /* Bitno da padding ne širi sliku */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Selektori atributa prema zadatku */
+        img[src$=".jpg"] {
+            border-style: solid;
+            border-width: 4px;
+        }
+
+        img[data-set="city"] {
+            border-color: #0055BF;
+        }
+
+        img[data-set="technic"] {
+            border-color: #333333;
+        }
+
+        img[data-set="friends"] {
+            border-color: #E91E63;
+        }
+    </style>
+</head>
+<body>
+
+    <header></header>
+    
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="galerija.html" class="active">Galerija</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="https://www.lego.com" target="_blank">Službeni LEGO</a>
+    </nav>
+
+    <div class="container">
+        <h1>Galerija LEGO setova</h1>
+        <p>Ovdje možete vidjeti nekoliko LEGO setova iz naše kolekcije.</p>
+
+        <div class="gallery">
+            <img src="city1.jpg" alt="Lego City Bus" data-set="city">
+            <img src="technic1.jpg" alt="Lego Technic Car" data-set="technic">
+            <img src="friends1.jpg" alt="Lego Friends House" data-set="friends">
+            
+            <img src="city2.jpg" alt="Lego City Construction" data-set="city">
+            <img src="technic2.jpg" alt="Lego Technic Helicopter" data-set="technic">
+            <img src="friends2.jpg" alt="Lego Friends Treehouse" data-set="friends">
+        </div>
+    </div>
+
+</body>
+</html>
