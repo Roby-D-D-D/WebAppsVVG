@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 7</title>
+</head>
+<body>
+
+    <h1>Vježba 7: Korištenje entiteta</h1>
+
+    <p>primjer stranice koja koristi HTML entitete u podnožju.</p>
+
+    <footer>
+        Copyright &copy; Robert Domić, <a href="https://github.com/Roby-D-D-D" target="_blank">Github</a> &amp; GreenIT. All rights reserved.
+    </footer>
+
+</body>
+</html>
