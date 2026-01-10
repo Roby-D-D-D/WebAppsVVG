@@ -72,7 +72,6 @@
             font-size: 15px;
         }
 
-        /* --- GRID LAYOUT (Vježba 18) --- */
         .gallery {
             display: grid;
             /* Definiramo 3 stupca jednake širine */
@@ -81,7 +80,6 @@
             gap: 20px; 
         }
 
-        /* --- STIL KARTICE --- */
         .card {
             background-color: #fff;
             border: 2px solid #ddd; /* Default sivi obrub */
@@ -110,7 +108,6 @@
             font-weight: 500;
         }
 
-        /* --- BOJE OBRUBA PREMA VRSTI (data-set na kartici) --- */
         
         /* City - Plava */
         .card[data-set="city"] {
