@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO Projekt</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ffcf00;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: 600;
+        }
+
+        #menu-toggle, .hamburger { 
+            display: none; 
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 4px; 
+        }
+
+        .card[data-set="city"] { border-color: #0055BF; }
+        .card[data-set="technic"] { border-color: #F57C00; }
+        .card[data-set="friends"] { border-color: #E91E63; }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+                background-color: #1a1a1a;
+                color: white;
+                padding: 12px;
+                text-align: center;
+                cursor: pointer;
+                font-weight: bold;
+                border-bottom: 2px solid #ffcf00;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+            }
+
+            #menu-toggle:checked ~ nav {
+                display: flex;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr; 
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="font-weight: bold; font-size: 20px;">LEGO KLUB</div>
+    </header>
+
+    <input type="checkbox" id="menu-toggle" style="display: none;">
+    <label for="menu-toggle" class="hamburger">☰ Meni</label>
+    
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <h1>Galerija LEGO setova</h1>
+        <div class="gallery">
+            <div class="card" data-set="city">
+                <img src="city1.jpg" alt="City">
+                <p>LEGO City policija</p>
+            </div>
+            <div class="card" data-set="technic">
+                <img src="technic1.jpg" alt="Technic">
+                <p>LEGO Technic auto</p>
+            </div>
+            <div class="card" data-set="friends">
+                <img src="friends1.jpg" alt="Friends">
+                <p>LEGO Friends kuća</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
