@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 9 - Video</title>
+</head>
+<body>
+
+    <h1>Vježba 9: Video elementi</h1>
+
+    <h3>1. Video stream preko &lt;video&gt; elementa</h3>
+    
+    <video width="500" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Ne podržava video tag.
+    </video>
+    
+    <p>
+        <em>Napomena: Da bi ovo bio tvoj video, moraš ga spremiti u mapu i u 
+        dijelu <code>src="..."</code> Naziv (npr. <code>moj-film.mp4</code>).</em>
+    </p>
+
+    <hr>
+
+    <h3>2. Preko YouTube servisa</h3>
+    
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/LXb3EKWsInQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
