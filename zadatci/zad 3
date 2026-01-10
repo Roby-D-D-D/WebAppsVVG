@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 3</title>
+</head>
+<body>
+
+    <h1>Naslov moje stranice</h1>
+    <h2>Podnaslov stranice</h2>
+
+    <p>Ovo je prvi odlomak teksta.</p>
+    <p>Ovo je drugi odlomak.</p>
+
+    <figure>
+        <a href="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" target="_blank">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="Programiranje" width="200">
+        </a>
+        <figcaption>Slika 1: Apsolutna putanja</figcaption>
+    </figure>
+
+    <figure>
+        <a href="slika.jpg" target="_blank">
+            <img src="slika.jpg" alt="Moja slika" width="200">
+        </a>
+        <figcaption>Slika 2: Relativna putanja</figcaption>
+    </figure>
+
+</body>
+</html>
