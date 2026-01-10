@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 2</title>
+</head>
+<body>
+
+    <h1>Moje putovanje kroz web dizajn</h1>
+
+    <h2>Učimo umetati slike</h2>
+
+    <p>Ovo je vježba u kojoj učimo razliku između apsolutnih i relativnih putanja. Slike su ključni dio svake web stranice jer privlače pažnju čitatelja.</p>
+
+    <p>Ispod se nalaze dva primjera. Prva slika se učitava direktno s interneta, a druga slika se učitava s mog računala.</p>
+
+    <h3>1. Apsolutna putanja:</h3>
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400" alt="Slika s interneta" title="Slika 1">
+
+    <h3>2. Relativna putanja:</h3>
+    <img src="slika.jpg" alt="Moja lokalna slika" title="Slika s računala">
+
+</body>
+</html>
