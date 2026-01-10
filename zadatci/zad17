@@ -4,7 +4,6 @@
     <title>Galerija LEGO setova</title>
     <style>
         body {
-            /* Promjena fonta kako bi odgovarao slici (Segoe UI je standard za Windows) */
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
