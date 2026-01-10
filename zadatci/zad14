@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspored radionica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th.main-header {
+            font-weight: bold;
+            background-color: white;
+            border: none;
+            padding-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .yellow-header {
+            background-color: #fff9c4;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Raspored radionica</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" style="border: none; padding-bottom: 10px;">Raspored radionica – zimski semestar</th>
+            </tr>
+            <tr class="yellow-header">
+                <th>Dan</th>
+                <th>Vrijeme</th>
+                <th>Razina</th>
+                <th>Dobna skupina</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Utorak</td>
+                <td>18:00 – 20:00</td>
+                <td>Početna radionica</td>
+                <td>12 - 13 godina</td>
+            </tr>
+            <tr>
+                <td>Četvrtak</td>
+                <td>18:00 – 20:00</td>
+                <td>Napredna radionica</td>
+                <td>14 - 17 godina</td>
+            </tr>
+            <tr>
+                <td>Subota</td>
+                <td>10:00 – 12:00</td>
+                <td>Specijalna radionica</td>
+                <td>otvoreno za sve</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
