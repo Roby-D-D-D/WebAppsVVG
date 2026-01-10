@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 1</title>
+</head>
+<body>
+
+    <h1>Dobrodošli u svijet weba</h1>
+
+    <h2>Učenje HTML-a je prvi korak</h2>
+
+    <p>HTML (HyperText Markup Language) je standardni jezik za označavanje koji se koristi za izradu web stranica.</p>
+
+    <p>Uz HTML često koristimo CSS za uljepšavanje i JavaScript za funkcionalnost.</p>
+
+</body>
+</html>
