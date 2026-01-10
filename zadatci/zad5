@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 5</title>
+</head>
+<body>
+
+    <h3>Popis mobitela sa slikama</h3>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th width="200">Samsung</th>
+                <th width="200">Apple</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>
+                    <img src="https://m.media-amazon.com/images/I/61pBvlYVPxL._AC_SX679_.jpg" alt="Galaxy S8" width="50" style="vertical-align:middle;">
+                    Galaxy S8
+                </td>
+                <td>
+                    <img src="https://m.media-amazon.com/images/I/6186uFrWqAL._AC_SX679_.jpg" alt="Iphone 9" width="50" style="vertical-align:middle;">
+                    Iphone 9
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="https://m.media-amazon.com/images/I/71wPwmxo2NL._AC_SX679_.jpg" alt="Galaxy S9" width="50" style="vertical-align:middle;">
+                    Galaxy S9
+                </td>
+                <td>
+                    <img src="https://m.media-amazon.com/images/I/81+7L-q8AIL._AC_SX679_.jpg" alt="Iphone X" width="50" style="vertical-align:middle;">
+                    Iphone X
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
