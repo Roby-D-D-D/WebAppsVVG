@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Vježba 11</title>
+</head>
+<body>
+
+    <h1>Registracijska forma</h1>
+
+    <form action="#" method="get">
+        
+        <label for="ime">Ime i prezime:</label><br>
+        <input type="text" id="ime" name="ime" placeholder="Unesite vaše ime" required>
+        <br><br>
+
+        <label for="email">Email adresa:</label><br>
+        <input type="email" id="email" name="email" placeholder="primjer@mail.com" required>
+        <br><br>
+
+        <label for="lozinka">Lozinka:</label><br>
+        <input type="password" id="lozinka" name="lozinka">
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="uvjeti" value="prihvaceno">
+            Prihvaćam uvjete korištenja
+        </label>
+        <br><br>
+
+        <input type="submit" value="Pošalji podatke">
+
+    </form>
+
+</body>
+</html>
